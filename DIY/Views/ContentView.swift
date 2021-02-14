@@ -15,6 +15,7 @@ struct ContentView: View {
                 .font(.title)
             ForEach(DataSource.shared.projects) { project in
                 ProjectCellView(project: project)
+                    .listRowInsets(EdgeInsets())
             }
             
             Text("Tools")
@@ -22,7 +23,6 @@ struct ContentView: View {
             ForEach(DataSource.shared.tools) { tool in
                 CellView(cell: tool)
             }
-            
         }
     }
 }
