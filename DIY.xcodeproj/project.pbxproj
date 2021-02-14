@@ -13,6 +13,12 @@
 		9CBCE12025D8913700E9C005 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBCE11F25D8913700E9C005 /* Preview Assets.xcassets */; };
 		9CBCE12B25D8913800E9C005 /* DIYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCE12A25D8913800E9C005 /* DIYTests.swift */; };
 		9CBCE13625D8913800E9C005 /* DIYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCE13525D8913800E9C005 /* DIYUITests.swift */; };
+		9CBCE14725D8915500E9C005 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCE14625D8915500E9C005 /* Models.swift */; };
+		9CBCE14C25D891F200E9C005 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCE14B25D891F200E9C005 /* DataSource.swift */; };
+		9CBCE38F25D8982F00E9C005 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCE38E25D8982F00E9C005 /* CellView.swift */; };
+		9CBCE3A225D8A38200E9C005 /* ProjectCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCE3A125D8A38200E9C005 /* ProjectCellView.swift */; };
+		9CBCE3A725D8A3D000E9C005 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCE3A625D8A3D000E9C005 /* CarouselView.swift */; };
+		9CBCE3AC25D8A56B00E9C005 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCE3AB25D8A56B00E9C005 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		9CBCE13125D8913800E9C005 /* DIYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DIYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBCE13525D8913800E9C005 /* DIYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYUITests.swift; sourceTree = "<group>"; };
 		9CBCE13725D8913800E9C005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CBCE14625D8915500E9C005 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		9CBCE14B25D891F200E9C005 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		9CBCE38E25D8982F00E9C005 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		9CBCE3A125D8A38200E9C005 /* ProjectCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCellView.swift; sourceTree = "<group>"; };
+		9CBCE3A625D8A3D000E9C005 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		9CBCE3AB25D8A56B00E9C005 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				9CBCE11825D8913000E9C005 /* DIYApp.swift */,
-				9CBCE11A25D8913000E9C005 /* ContentView.swift */,
+				9CBCE14625D8915500E9C005 /* Models.swift */,
+				9CBCE14B25D891F200E9C005 /* DataSource.swift */,
+				9CBCE3B325D8B93500E9C005 /* Views */,
 				9CBCE11C25D8913700E9C005 /* Assets.xcassets */,
 				9CBCE12125D8913700E9C005 /* Info.plist */,
 				9CBCE11E25D8913700E9C005 /* Preview Content */,
@@ -128,6 +142,18 @@
 				9CBCE13725D8913800E9C005 /* Info.plist */,
 			);
 			path = DIYUITests;
+			sourceTree = "<group>";
+		};
+		9CBCE3B325D8B93500E9C005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CBCE11A25D8913000E9C005 /* ContentView.swift */,
+				9CBCE38E25D8982F00E9C005 /* CellView.swift */,
+				9CBCE3AB25D8A56B00E9C005 /* CircleView.swift */,
+				9CBCE3A125D8A38200E9C005 /* ProjectCellView.swift */,
+				9CBCE3A625D8A3D000E9C005 /* CarouselView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CBCE3AC25D8A56B00E9C005 /* CircleView.swift in Sources */,
+				9CBCE3A225D8A38200E9C005 /* ProjectCellView.swift in Sources */,
+				9CBCE38F25D8982F00E9C005 /* CellView.swift in Sources */,
+				9CBCE14725D8915500E9C005 /* Models.swift in Sources */,
+				9CBCE14C25D891F200E9C005 /* DataSource.swift in Sources */,
+				9CBCE3A725D8A3D000E9C005 /* CarouselView.swift in Sources */,
 				9CBCE11B25D8913000E9C005 /* ContentView.swift in Sources */,
 				9CBCE11925D8913000E9C005 /* DIYApp.swift in Sources */,
 			);
