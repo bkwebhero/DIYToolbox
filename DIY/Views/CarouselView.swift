@@ -29,5 +29,6 @@ struct CarouselView: View {
 struct CarouselView_Previews: PreviewProvider {
     static var previews: some View {
         CarouselView(items: DataSource.shared.projects[0].tools)
+            .previewLayout(.sizeThatFits)
     }
 }

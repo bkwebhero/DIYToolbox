@@ -27,5 +27,6 @@ struct CircleView: View {
 struct CircleView_Previews: PreviewProvider {
     static var previews: some View {
         CircleView(item: DataSource.shared.tools[0])
+            .previewLayout(.sizeThatFits)
     }
 }

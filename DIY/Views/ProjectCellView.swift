@@ -22,5 +22,6 @@ struct ProjectCellView: View {
 struct ProjectCellView_Previews: PreviewProvider {
     static var previews: some View {
         ProjectCellView(project: DataSource.shared.projects[0])
+            .previewLayout(.sizeThatFits)
     }
 }
