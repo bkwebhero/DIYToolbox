@@ -22,7 +22,9 @@ struct CarouselView: View {
                     }
                 }
             }
+            .padding([.leading, .trailing])
         }
+        .padding([.leading, .trailing], -16)
     }
 }
 
