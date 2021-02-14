@@ -5,4 +5,4 @@ The UI components are broken down into small reusable "Views".
 
 The goods are in the DIY/Views folder.
 
-![alt text](https://github.com/bkwebhero/DIYToolbox/screenshot.png)
+![alt text](https://github.com/bkwebhero/DIYToolbox/blob/main/screenshot.png?raw=true)
