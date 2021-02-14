@@ -21,8 +21,10 @@ struct CarouselView: View {
                             .font(.caption)
                     }
                 }
-            }.padding()
-        }.frame(height: 100)
+            }
+        }
+        // Give a fixed height
+        .frame(height: Constants.carouselHeight)
     }
 }
 

@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
+        // List is SwiftUI equivalent of UITableView
+        // Views declared in closure will appear in a vertical table
         List {
             
             Text("Projects")
