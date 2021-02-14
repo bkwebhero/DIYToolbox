@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C9EB9F525D8CE7E00D2FF7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EB9F425D8CE7E00D2FF7A /* Constants.swift */; };
+		9C9EBA0025D8CFF400D2FF7A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EB9FF25D8CFF400D2FF7A /* ButtonView.swift */; };
 		9CBCE11925D8913000E9C005 /* DIYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCE11825D8913000E9C005 /* DIYApp.swift */; };
 		9CBCE11B25D8913000E9C005 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCE11A25D8913000E9C005 /* ContentView.swift */; };
 		9CBCE11D25D8913700E9C005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBCE11C25D8913700E9C005 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		9C9EB9F425D8CE7E00D2FF7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9C9EB9FF25D8CFF400D2FF7A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		9CBCE11525D8913000E9C005 /* DIY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBCE11825D8913000E9C005 /* DIYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYApp.swift; sourceTree = "<group>"; };
 		9CBCE11A25D8913000E9C005 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				9CBCE3AB25D8A56B00E9C005 /* CircleView.swift */,
 				9CBCE3A125D8A38200E9C005 /* ProjectCellView.swift */,
 				9CBCE3A625D8A3D000E9C005 /* CarouselView.swift */,
+				9C9EB9FF25D8CFF400D2FF7A /* ButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				9CBCE3A225D8A38200E9C005 /* ProjectCellView.swift in Sources */,
 				9CBCE38F25D8982F00E9C005 /* CellView.swift in Sources */,
 				9CBCE14725D8915500E9C005 /* Models.swift in Sources */,
+				9C9EBA0025D8CFF400D2FF7A /* ButtonView.swift in Sources */,
 				9CBCE14C25D891F200E9C005 /* DataSource.swift in Sources */,
 				9CBCE3A725D8A3D000E9C005 /* CarouselView.swift in Sources */,
 				9CBCE11B25D8913000E9C005 /* ContentView.swift in Sources */,

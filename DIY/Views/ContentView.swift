@@ -20,12 +20,19 @@ struct ContentView: View {
                 ProjectCellView(project: project)
                     .listRowInsets(EdgeInsets())
             }
+            ButtonView(text: "More Projects", action: {
+                print("No more, I'm not getting paid for this")
+            })
             
             Text("Tools")
                 .font(.title)
             ForEach(DataSource.shared.tools) { tool in
                 CellView(cell: tool)
             }
+            ButtonView(text: "More Tools", action: {
+                print("No more, this is a free sample")
+            })
+            
         }
     }
 }
