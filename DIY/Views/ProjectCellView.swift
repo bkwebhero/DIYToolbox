@@ -12,10 +12,15 @@ struct ProjectCellView: View {
     var project: Project
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             CellView(cell: project, showIcon: false)
+            Spacer()
+                .frame(height: 16)
+            Text("What You'll Need:")
+                .font(.headline)
             CarouselView(items: project.tools)
         }
+        
     }
 }
 

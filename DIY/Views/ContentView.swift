@@ -9,30 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        // List is SwiftUI equivalent of UITableView
-        // Views declared in closure will appear in a vertical table
-        List {
-            
-            Text("Projects")
-                .font(.title)
-            ForEach(DataSource.shared.projects) { project in
-                ProjectCellView(project: project)
-                    .listRowInsets(EdgeInsets())
+        ScrollView(.vertical) {
+            VStack(alignment: .leading) {
+                
+                // Projects
+                HeaderView(text: "Projects")
+                ForEach(DataSource.shared.projects) { project in
+                    ProjectCellView(project: project)
+                        .padding([.top, .bottom])
+                }
+                FooterView(text: "More Projects")
+                    .onTapGesture {
+                        print("Navigate to projects page")
+                    }
+                
+                // Tools
+                HeaderView(text: "Tools")
+                ForEach(DataSource.shared.tools) { tool in
+                    CellView(cell: tool)
+                }
+                FooterView(text: "More Tools")
+                    .onTapGesture {
+                        print("Navigate to tools page")
+                    }
             }
-            ButtonView(text: "More Projects", action: {
-                print("No more, I'm not getting paid for this")
-            })
-            
-            Text("Tools")
-                .font(.title)
-            ForEach(DataSource.shared.tools) { tool in
-                CellView(cell: tool)
-            }
-            ButtonView(text: "More Tools", action: {
-                print("No more, this is a free sample")
-            })
-            
+            .padding([.leading, .trailing])
         }
     }
 }

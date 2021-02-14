@@ -35,7 +35,7 @@ struct CellView: View {
             
             VStack(alignment: .leading) {
                 Text(cell.name)
-                    .font(.headline)
+                    .font(.title)
                 Text(cell.description)
                     .font(.callout)
             }

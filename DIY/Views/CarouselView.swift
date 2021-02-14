@@ -12,7 +12,7 @@ struct CarouselView: View {
     var items: [CarouselDisplayable]
     
     var body: some View {
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(0..<items.count) { index in
                     VStack {
@@ -21,10 +21,8 @@ struct CarouselView: View {
                             .font(.caption)
                     }
                 }
-            }.padding()
+            }
         }
-        // Give a fixed height
-        .frame(height: Constants.carouselHeight)
     }
 }
 
