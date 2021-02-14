@@ -17,17 +17,12 @@ struct CellView: View {
         HStack {
             if showIcon {
                 VStack {
-                    ZStack {
-                        Color.gray
-                        Image(cell.iconName)
-                            .resizable()
-                            .frame(width: 45, height: 45)
-                            .aspectRatio(contentMode: .fit)
-                    }
-                    .frame(width: 66, height: 66)
-                    .cornerRadius(33)
-                    Spacer()
+                CircleView(item: cell)
+                    .frame(alignment: .top)
+                Spacer()
                 }
+                // Stop spacer above from forcing the text on the right to stretch to fill available space
+                .fixedSize(horizontal: false, vertical: true)
             }
             
             VStack(alignment: .leading) {
@@ -42,6 +37,7 @@ struct CellView: View {
 
 struct CellView_Previews: PreviewProvider {
     static var previews: some View {
-        CellView(cell: DataSource.shared.tools[0])
+        CellView(cell: DataSource.shared.tools[6])
+            .previewLayout(.sizeThatFits)
     }
 }
