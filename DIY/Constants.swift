@@ -12,4 +12,6 @@ struct Constants {
     static var circleWidth: CGFloat = 66
     static var circleIconPadding: CGFloat = 10
     static var carouselHeight: CGFloat = 100
+    static var buttonHeight: CGFloat = 50
+    static var buttonCornerRadius: CGFloat = 8
 }

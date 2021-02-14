@@ -19,8 +19,8 @@ struct ButtonView: View {
                     .foregroundColor(.white)
             }
         })
-        .frame(height: 50)
-        .cornerRadius(8)
+        .frame(height: Constants.buttonHeight)
+        .cornerRadius(Constants.buttonCornerRadius)
     }
 }
 
@@ -29,6 +29,6 @@ struct SwiftUIView_Previews: PreviewProvider {
         ButtonView(text: "Press Me", action: {
             print("Pressed!")
         })
-            .previewLayout(.sizeThatFits)
+        .previewLayout(.sizeThatFits)
     }
 }
