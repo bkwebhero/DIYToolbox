@@ -14,6 +14,7 @@ struct HeaderView: View {
     var body: some View {
         Text(text)
             .font(.largeTitle)
+            .fontWeight(.bold)
     }
 }
 
